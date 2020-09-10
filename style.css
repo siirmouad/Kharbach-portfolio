@@ -1,0 +1,111 @@
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+.portfolio-nav {
+  float: left;
+  margin-left: auto;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #4caf50;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+} /* main container positioning*/
+main {
+  position: absolute;
+  margin: 50px auto;
+  left: 0;
+  right: 0;
+  max-width: 800px;
+}
+
+/* text */
+.about-me-text {
+  color: var(--accent-color);
+  font-family: "Open Sans Condensed", sans-serif;
+  letter-spacing: 2px;
+  line-height: 20px;
+  text-align: justify;
+  margin: 2px;
+}
+
+/*controls navbar bg and main container bg*/
+.bg-dark {
+  background-color: var(--container-color) !important;
+}
+
+/*separator for nav links*/
+.border-left {
+  border-color: var(--header-color) !important;
+  position: relative;
+  top: 10px;
+  margin-right: 10px;
+}
+.btn-dark,
+.btn-dark:hover,
+.btn-dark:focus {
+  background-color: #101010;
+  border-color: #101010;
+}
+
+/* card backgroud is same as container */
+.card {
+  background-color: var(--container-color);
+  width: 18rem;
+}
+
+/*portfolio images*/
+.portfolio-img {
+  max-width: 400px;
+  height: 180px;
+}
+
+/* main box */
+.flexbox {
+  background-color: var(--container-color) !important;
+  border-width: 4px;
+  border-style: solid;
+  border-color: var(--main-color);
+}
+
+@media only screen and (min-width: 768) {
+  .flexbox {
+    border-width: 4px;
+    border-style: solid;
+  }
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: white;
+  text-align: center;
+}
